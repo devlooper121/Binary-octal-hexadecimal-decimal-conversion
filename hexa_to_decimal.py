@@ -1,6 +1,6 @@
 # ###############################
 # name: DHEERAJ KUMAR SHRIVASTVA
-# roll no: 21106
+# Hexadecimal to decimal converter
 # ###############################
 
 def hex_to_dec(number):
@@ -28,7 +28,7 @@ print("\nwelcome to Hexadecimal to decimal conversion.")
 hex = [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f','A','B','C','D','E','F']
 
 while input("\nDo you Want to convert Hexadecimal to Decimal: 'y' or 'n' ? ") == 'y':
-    num = input("\nEnter Hexadecimal value : ")
+    num = input("\nEnter any positive Hexadecimal value : ")
     flag = 1
     for i in num:
         if i not in hex:

@@ -1,6 +1,6 @@
 # ###############################
 # name: DHEERAJ KUMAR SHRIVASTVA
-# roll no: 21106
+# Hexadecimal to binary converter
 # ###############################
 
 def hex_to_dec(number):
@@ -36,10 +36,22 @@ def dec_to_binary(number):
 
 
 print("\nwelcome to Hexadecimal to binary conversion.")
+hex = [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f','A','B','C','D','E','F']
+
+
 while input("\nDo you Want to convert Hexadecimal to Binary: 'y' or 'n' ? ") == 'y':
-    num = input("\nEnter Hexadecimal value : ")
-    decimal = int(hex_to_dec(num))
-    print(f"Binary conversion of Hexadecimal {num} is : ({dec_to_binary(decimal)})\n")
+    num = input("\nEnter any positive Hexadecimal value : ")
+    # for only hexadecimal input
+    flag = 1
+    for i in num:
+        if i in hex:
+            flag = 0
     
+    # main
+    if flag == 1:
+        decimal = int(hex_to_dec(num))
+        print(f"Binary conversion of Hexadecimal {num} is : ({dec_to_binary(decimal)})\n")
+    else:
+        print(f"'{num}' is not a hexadecimal number. Try again.")    
 print("GoodBye!!")
     

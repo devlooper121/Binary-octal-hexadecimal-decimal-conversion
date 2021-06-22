@@ -1,6 +1,6 @@
 # ###############################
 # name: DHEERAJ KUMAR SHRIVASTVA
-# roll no: 21106
+# Octal to decimal converter
 # ###############################
 
 def oct_to_dec(number):

@@ -1,6 +1,6 @@
 # ###############################
 # name: DHEERAJ KUMAR SHRIVASTVA
-# roll no: 21106
+# Decimal to binary converter
 # ###############################
 
 def dec_to_binary(number):
@@ -28,7 +28,7 @@ def decimal_to_bin(number):
 print("\nwelcome to Decimal to binary conversion.")
 while input("Do you Want to convert decimal to binary: 'y' or 'n' ? ") == 'y':
     
-    num = float(input("Enter the decimal number : "))
+    num = float(input("Enter any positive decimal number : "))
     if num > 1:
         print(f"Binary conversion of {num} : ({dec_to_binary(num)})\n")
     else:
